@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+
     <title>Netto</title>
   </head>
   <body>
     <header>
       <div class="esquerda">
-        <img src="img/logo.png" alt="logo" />
+        <img src="img/logo.svg" alt="logo" />
       </div>
       <div class="meio">
         <nav>
@@ -29,7 +34,10 @@
       <div id="hero">
         <div class="esquerda">
           <div class="textos">
-            <h1>Mais do que um app, uma rede de proteção.</h1>
+            <h1>
+              Mais do que um app,
+              <span class="destaque">uma rede de proteção.</span>
+            </h1>
             <p>
               O Netto utiliza inteligência artificial para identificar e
               bloquear golpes digitais, protegendo o que realmente importa:
@@ -38,7 +46,9 @@
           </div>
           <div class="botoes">
             <button class="baixar">Baixar o app</button>
-            <a><button class="conheça">Conheça as funcionalidades</button></a>
+            <a href="#funcionalidades"
+              ><button class="conheca">Conheça as funcionalidades</button></a
+            >
           </div>
         </div>
         <div class="direita">
@@ -49,31 +59,39 @@
         <div class="esquerda">
           <h2>Por que escolher o Netto?</h2>
           <p>
-            Tecnologia, cuidado e Inteligência Artificial trabalhando juntos
-            para proteger quem você ama. Conheça os principais motivos para
-            confiar no Netto.
+            Tecnologia, cuidado e Inteligência Artificial trabalhando <br />
+            juntos para proteger quem você ama. Conheça os principais motivos
+            para confiar no Netto.
           </p>
         </div>
         <div class="direita">
           <div id="card" class="card-protecao">
-            <img src="img/divisoria.svg" class="divisoria" />
-            <div class="icon"><img src="img/cadeado.svg" /></div>
-            <h3>Proteção continua</h3>
-            <p>O Netto identifica e bloqueia golpes antes que você perceba.</p>
+            <div class="divisoria"></div>
+            <div class="card">
+              <div class="icon"><img src="img/cadeado.svg" /></div>
+              <h3>Proteção continua</h3>
+              <p>
+                O Netto identifica e bloqueia golpes antes que você perceba.
+              </p>
+            </div>
           </div>
           <div id="card" class="card-seguranca">
-            <img src="img/divisoria.svg" class="divisoria" />
-            <div class="icon"><img src="img/armadura.svg" /></div>
-            <h3>Mais segurança digital</h3>
-            <p>
-              Reduza os riscos de fraudes, e mantenha seus dados protegidos.
-            </p>
+            <div class="divisoria"></div>
+            <div class="card">
+              <div class="icon"><img src="img/armadura.svg" /></div>
+              <h3>Mais segurança digital</h3>
+              <p>
+                Reduza os riscos de fraudes, e mantenha seus dados protegidos.
+              </p>
+            </div>
           </div>
           <div id="card" class="card-tranquilidade">
-            <img src="img/divisoria.svg" class="divisoria" />
-            <div class="icon"><img src="img/coracao.svg" /></div>
-            <h3>Tranquilidade para a sua família</h3>
-            <p>Você cuida de quem ama, e o Netto cuida do que importa.</p>
+            <div class="divisoria"></div>
+            <div class="card">
+              <div class="icon"><img src="img/coracao.svg" /></div>
+              <h3>Tranquilidade para a sua família</h3>
+              <p>Você cuida de quem ama, e o Netto cuida do que importa.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -85,56 +103,64 @@
               <div class="num">
                 <label>1</label>
               </div>
-              <h3>Detecção</h3>
-              <p>
-                Identifica mensagens, links, ligações, e-mails e outros
-                conteúdos suspeitos.
-              </p>
-              <img class="ilustracao" src="img/deteccao.png" />
-              <div class="destaque">
-                <img src="" class="icon" />
-                <label>Em tempo real</label>
+              <div class="conteudo">
+                <h3>Detecção</h3>
+                <p>
+                  Identifica mensagens, links, ligações, e-mails e outros
+                  conteúdos suspeitos.
+                </p>
+                <div class="ilustracao"><img src="img/deteccao.svg" /></div>
+                <div class="destaque">
+                  <img src="img/relogio.svg" class="icon" />
+                  <label>Em tempo real</label>
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="num">
                 <label>2</label>
               </div>
-              <h3>Bloqueio</h3>
-              <p>Bloqueia o acesso a conteúdos identificados como golpes.</p>
-              <img class="ilustracao" src="" />
-              <div class="destaque">
-                <img src="img/automatico.svg" class="icon" />
-                <label>Automático</label>
+              <div class="conteudo">
+                <h3>Bloqueio</h3>
+                <p>Bloqueia o acesso a conteúdos identificados como golpes.</p>
+                <div class="ilustracao"><img src="img/bloqueio.svg" /></div>
+                <div class="destaque">
+                  <img src="img/automatico.svg" class="icon" />
+                  <label>Automático</label>
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="num">
                 <label>3</label>
               </div>
-              <h3>Abrangência</h3>
-              <p>
-                Proteção em aplicativos, navegadores, SMS, e-mails e chamadas.
-              </p>
-              <img class="ilustracao" src="img/abrangencia.png" />
-              <div class="destaque">
-                <img src="img/apps.svg" class="icon" />
-                <label>5+ canais digitais</label>
+              <div class="conteudo">
+                <h3>Abrangência</h3>
+                <p>
+                  Proteção em aplicativos, navegadores, SMS, e-mails e chamadas.
+                </p>
+                <div class="ilustracao"><img src="img/abrangencia.svg" /></div>
+                <div class="destaque">
+                  <img src="img/apps.svg" class="icon" />
+                  <label>5+ canais digitais</label>
+                </div>
               </div>
             </div>
             <div class="card">
               <div class="num">
                 <label>4</label>
               </div>
-              <h3>Autonomia</h3>
-              <p>
-                Funciona em segundo plano, sem exigir que o usuário abra o
-                aplicativo.
-              </p>
-              <img class="ilustracao" src="img/autonomia.png" />
-              <div class="destaque">
-                <img src="img/armadura.svg" class="icon" />
-                <label>24h de proteção</label>
+              <div class="conteudo">
+                <h3>Autonomia</h3>
+                <p>
+                  Funciona em segundo plano, sem exigir que o usuário abra o
+                  aplicativo.
+                </p>
+                <div class="ilustracao"><img src="img/autonomia.svg" /></div> 
+                <div class="destaque">
+                  <img src="img/escudo.svg" class="icon" />
+                  <label>24h de proteção</label>
+                </div>
               </div>
             </div>
           </div>
@@ -213,9 +239,10 @@
       <img src="img/Vector.svg" class="background" id="" />
       <img src="img/Vector-1.svg" class="background" id="" />
       <div class="esquerda">
-        <img src="img/logo.png" class="logo" />
+        <img src="img/logo.svg" class="logo" />
         <label>Tecnologia que protege o que importa.</label>
       </div>
+      <div class="divisoria-footer"></div>
       <div class="direita">
         <label class="titulo">Juntos por um futuro digital mais seguro.</label>
         <label class="texto"
