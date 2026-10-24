@@ -44,6 +44,18 @@ header {
     text-decoration: none;
     color: rgba(0, 16, 46, 0.65);
   }
+
+  /* Remove o contorno preto padrão ao clicar em links e botões */
+  li a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgba(252, 98, 17, 0.6); /* Substitui por uma cor suave do seu projeto */
+  }
+
+  /* Garante que o clique puro do mouse não mostre nenhuma borda */
+  li a:focus:not(:focus-visible),
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
 }
 
 .logo {
@@ -231,9 +243,9 @@ main {
         }
 
         .divisoria {
-          width: 1px;
+          width: 0px;
           height: 180px;
-          background-color: rgba(252, 98, 17, 0.42);
+          border-left: 2px solid rgba(252, 98, 17, 0.32);
           flex-shrink: 0;
           align-self: center;
         }
@@ -243,13 +255,17 @@ main {
 
   .funcionalidades-seguranca {
     background-color: #fcf6ed;
-    padding: 75px 100px;
     width: 100%;
-    height: auto;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
 
     #funcionalidades {
       display: flex;
       flex-direction: column;
+      padding: 75px 100px;
 
       h2 {
         font-size: 32px;
@@ -270,7 +286,6 @@ main {
           border-radius: 20px;
           box-shadow: 0px 0px 14.9px 3px rgba(0, 0, 0, 0.09);
           width: 293px;
-          
 
           .num {
             background: rgba(252, 98, 17, 0.87);
@@ -314,14 +329,14 @@ main {
               margin-bottom: 46px;
             }
 
-            .ilustracao{
+            .ilustracao {
               width: 220px;
               height: 222px;
               align-items: center;
               display: flex;
               justify-content: center;
 
-              img{
+              img {
                 max-width: 100%;
                 max-height: 100%;
                 width: auto;
@@ -344,12 +359,12 @@ main {
               border: 1px solid rgba(252, 98, 17, 0.35);
               border-radius: 50px;
 
-              .icon{
+              .icon {
                 height: 20px;
                 width: auto;
               }
 
-              label{
+              label {
                 color: rgba(252, 98, 17, 0.8);
                 font-size: 15px;
                 font-family: "Poppins", sans-serif;
@@ -360,5 +375,289 @@ main {
         }
       }
     }
+
+    #seguranca {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      padding: 0px 94px;
+      margin-top: auto;
+      justify-content: center;
+      align-items: center;
+      min-height: 219px;
+      gap: 260px;
+      width: 100%;
+
+      .esquerda,
+      .direita {
+        position: relative;
+        z-index: 2;
+        display: flex;
+      }
+
+      .esquerda {
+        flex-direction: column;
+        flex: 2;
+        width: fit-content;
+
+        .subtitulo {
+          font-size: 15px;
+          font-weight: 500;
+          color: rgba(252, 98, 17, 0.8);
+        }
+        .titulo {
+          font-size: 36px;
+          font-weight: 600;
+          color: rgba(0, 16, 46, 0.75);
+          line-height: 50px;
+        }
+      }
+
+      .direita {
+        flex-direction: row;
+        flex: 5;
+        width: fit-content;
+
+        .card {
+          flex: 2;
+          .indicador {
+            font-size: 40px;
+            font-weight: 600;
+            color: #fc6211;
+          }
+
+          p {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(0, 16, 46, 0.612);
+          }
+        }
+
+        .divisoria {
+          margin: 0px 46px;
+          height: 104px;
+          width: 0px;
+          border-left: 2px solid rgba(252, 98, 17, 0.32);
+          flex-shrink: 0;
+        }
+      }
+
+      .card:nth-child(5) {
+        margin-right: 29px;
+      }
+
+      .background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        pointer-events: none;
+        z-index: 1;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .bg2 {
+        height: 219px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+
+      .bg1 {
+        height: 203px;
+      }
+    }
+  }
+
+  #estatisticas {
+    display: flex;
+    flex-direction: column;
+    margin: 75px 100px 0px 100px;
+    padding-bottom: 15px;
+
+    h2 {
+      position: absolute;
+      font-size: 32px;
+      font-weight: 500;
+      color: rgba(0, 16, 46, 0.9);
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 13px;
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 2;
+        min-height: 250px;
+        background-color: #fcf6ed;
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.04);
+        border-radius: 25px;
+      }
+
+      .card:nth-of-type(-n + 3) {
+        /* background-color: #FCF6ED; */
+        align-self: flex-end;
+        padding: 30px 31px;
+        margin-top: 60px;
+        max-width: 280px;
+        min-width: 280px;
+        flex: 3;
+        justify-content: space-between;
+
+        .indicador {
+          font-size: 40px;
+          font-weight: 600;
+          color: #fc6211;
+          line-height: 50px;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          color: #00102e9c;
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+        }
+
+        .fonte {
+          font-size: 10px;
+          font-weight: 300;
+          color: #00102e9c;
+        }
+      }
+
+      .card :not(.excecao) {
+        justify-content: end;
+      }
+
+      .card:nth-child(4) {
+        /* background-color: #FCF6ED; */
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 43px 11px;
+        margin-left: 21px;
+        flex: 5;
+
+        .esquerda {
+          display: flex;
+          flex: 3;
+          position: relative;
+
+          .destaque {
+            transform: rotate(-30deg);
+            width: 26px;
+            transform-origin: top left;
+            position: absolute;
+            left: 140px;
+          }
+
+          .idosa {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+
+        .direita {
+          display: flex;
+          flex-direction: column;
+          flex: 3;
+          gap: 23px;
+          margin-left: 9px;
+          justify-content: center;
+
+          .titulo {
+            color: #fc6211de;
+            font-size: 18px;
+            font-weight: 600;
+          }
+
+          .texto {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            color: #00102e9c;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  position: relative;
+  margin-top: 75px;
+  padding: 20px 40% 58px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .background {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    pointer-events: none;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    height: max-content;
+  }
+
+  .esquerda {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+
+    label {
+      font-size: 16px;
+      font-weight: 500;
+      color: #00102e99;
+    }
+  }
+  .divisoria-footer {
+    margin: 0px 53px;
+    height: 96px;
+    width: 0px;
+    border-left: 2px solid rgba(252, 98, 17, 0.32);
+    flex-shrink: 0;
+    display: flex;
+  }
+
+  .direita {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    gap: 16px;
+
+    .titulo{
+      font-size: 24px;
+      font-weight: 600;
+      color: #00102EBF;
+      padding-right: 122px;
+      line-height: 32px;
+    }
+    .texto{
+      font-family: "Inter", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #00102E9C;
+    }
+
+
   }
 }
