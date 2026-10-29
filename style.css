@@ -22,7 +22,7 @@ header {
   right: 0;
   width: auto;
   margin: 0;
-  padding: 12px 100px;
+  padding: 0.8vw 6.6vw;
   box-sizing: border-box;
   z-index: 9999;
 
@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #faf9f6;
-  box-shadow: 0 2px 12px rgba(0, 16, 46, 0.06);
+  box-shadow: 0 0.1vw 0.8vw rgba(0, 16, 46, 0.06);
 
   .esquerda,
   .meio,
@@ -47,7 +47,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    gap: clamp(18px, 3vw, 37px);
+    gap: 2.4vw;
     align-items: center;
   }
 
@@ -59,7 +59,7 @@ header {
   /* Remove o contorno preto padrão ao clicar em links e botões */
   li a:focus-visible,
   button:focus-visible {
-    outline: 2px solid rgba(252, 98, 17, 0.6); /* Substitui por uma cor suave do seu projeto */
+    outline: 0.1vw solid rgba(252, 98, 17, 0.6); /* Substitui por uma cor suave do seu projeto */
   }
 
   /* Garante que o clique puro do mouse não mostre nenhuma borda */
@@ -70,17 +70,17 @@ header {
 }
 
 .logo {
-  width: 169px;
+  width: 24.2vh;
   height: auto;
 }
 
 .baixar {
-  padding: 6.5px 27px;
-  border-radius: 50px;
+  padding: 0.9vh 1.8vw;
+  border-radius: 3.1vw;
   border: none;
   background-color: rgba(252, 98, 17, 0.86);
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #ffff;
   cursor: pointer;
 }
@@ -94,11 +94,12 @@ main {
   #hero {
     background-color: #fcf6ed;
     width: auto;
-    padding: 0px 177px;
+    padding: 0 11.6vw;
     display: flex;
     flex-direction: row;
-    gap: clamp(19px, 3vw, 39px);
-    margin-top: 100px;
+    gap: 2.6vw;
+    margin-top: 16vh;
+    
 
     .esquerda,
     .direita {
@@ -113,16 +114,16 @@ main {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      gap: clamp(15px, 3vw, 30px);
+      gap: 2vh;
 
       .textos {
         display: flex;
         flex-direction: column;
-        gap: 14px;
+        gap: 2vh;
         h1 {
-          font-size: clamp(24px, calc(15.5493px + 2.2535vw), 48px);
+          font-size: 3rem;
           font-weight: 600;
-          line-height: 50px;
+          line-height: 7vh;
           color: rgba(0, 16, 46, 0.9);
 
           .destaque {
@@ -130,7 +131,7 @@ main {
           }
         }
         p {
-          font-size: 20px;
+          font-size: 1.25rem;
           color: rgba(0, 16, 46, 0.61);
         }
       }
@@ -139,13 +140,13 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        gap: 12px;
+        gap: 0.8vw;
 
         .conheca {
-          font-size: 15px;
-          padding: 9px 27px;
-          border-radius: 50px;
-          border: 1px solid rgba(252, 98, 17, 0.86);
+          font-size: 0.9rem;
+          padding: 1.3vh 1.8vw;
+          border-radius: 3.1rem;
+          border: 0.1vh solid rgba(252, 98, 17, 0.86);
           font-family: "Poppins", sans-serif;
           color: rgba(0, 16, 46, 0.9);
           background-color: transparent;
@@ -156,15 +157,16 @@ main {
 
     .direita {
       height: auto;
+      justify-content: flex-end;
     }
   }
 
   #porque-nos-escolher {
     width: auto;
-    margin: 52px 100px;
+    margin: 7.5vh 6.6vw;
     display: flex;
     flex-direction: row;
-    gap: clamp(33px, 3vw, 66px);
+    /* gap: 4vw; */
     justify-content: center;
     align-items: center;
 
@@ -178,13 +180,14 @@ main {
       /* display: flex; */
       flex-direction: column;
       flex-wrap: wrap;
-      flex-grow: 2;
+      flex: 2;
       width: auto;
-      gap: 15px;
+      gap: 2.2vh;
+      margin-right: 4vw;
 
       h2 {
         width: 100%;
-        font-size: 32px;
+        font-size: 2rem;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         text-align: left;
@@ -193,7 +196,7 @@ main {
 
       p {
         font-family: "Inter", sans-serif;
-        font-size: 19px;
+        font-size: 1.2rem;
         display: flex;
         flex-wrap: wrap;
         color: rgba(0, 16, 46, 0.61);
@@ -202,7 +205,7 @@ main {
 
     .direita {
       flex-direction: row;
-      flex-grow: 3;
+      flex: 3;
       justify-content: start;
       align-items: stretch;
       height: fit-content;
@@ -214,17 +217,17 @@ main {
 
         h3 {
           font-family: "Inter", sans-serif;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-weight: 500;
           color: rgba(0, 16, 46, 0.85);
-          margin-top: 18px;
-          margin-bottom: 16px;
+          margin-top: 2.6vh;
+          margin-bottom: 2.3vh;
         }
 
         p {
           display: flex;
           flex-wrap: wrap;
-          font-size: 16px;
+          font-size: 1rem;
           font-family: "Inter", sans-serif;
           color: rgba(0, 16, 46, 0.61);
         }
@@ -232,16 +235,16 @@ main {
         .card {
           display: flex;
           flex-direction: column;
-          padding: 0px 33px;
+          /* padding: 0 2vw; */
           height: 100%;
           justify-content: start;
 
           .icon {
-            width: 60px;
-            height: 60px;
+            width: 3.9vw;
+            height: 3.9vw;
             border-radius: 50%;
             background-color: #fcf6ed;
-            box-shadow: 0px 4px 8.300000190734863px
+            box-shadow: 0 4px 8.300000190734863px
               rgba(163.05, 156.15, 145.81, 0.32);
             justify-content: center;
             align-items: center;
@@ -249,19 +252,28 @@ main {
 
             img {
               width: auto;
-              height: 30px;
+              height: 4.3vh;
             }
           }
         }
 
+        .card-protecao,.card-seguranca{
+          padding: 0 2vw;
+        }
+
+        .card-tranquilidade{
+          padding: 0 0 0 2vw;
+        }
+
         .divisoria {
-          width: 0px;
-          height: 180px;
-          border-left: 2px solid rgba(252, 98, 17, 0.32);
+          width: 0;
+          height: 25.8vh;
+          border-left: 0.1vw solid rgba(252, 98, 17, 0.32);
           flex-shrink: 0;
           align-self: center;
         }
       }
+
     }
   }
 
@@ -272,18 +284,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: clamp(40px, 3vw, 80px);
+    gap: 1vh;
 
     #funcionalidades {
       display: flex;
       flex-direction: column;
-      padding: 75px 100px;
+      padding: 10.8vh 6.6vw;
 
       h2 {
-        font-size: 32px;
+        font-size:2rem;
         font-weight: 500;
         color: rgba(0, 16, 46, 0.9);
-        margin-bottom: 35px;
+        margin-bottom: 5vh;
       }
 
       .cards {
@@ -295,55 +307,55 @@ main {
           display: flex;
           flex-direction: column;
           background-color: #fefefe;
-          border-radius: 20px;
+          border-radius: 1.25rem;
           box-shadow: 0px 0px 14.9px 3px rgba(0, 0, 0, 0.09);
-          width: 293px;
+          width: 19.2vw;
 
           .num {
             background: rgba(252, 98, 17, 0.87);
-            width: 35px;
-            height: 35px;
-            border-radius: 100%;
+            width: 2.3vw;
+            height: 2.3vw;
+            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 14px 10px;
+            margin: 2vh 0.7vw;
           }
 
           label {
             font-family: "Inter", sans-serif;
-            font-size: 20px;
+            font-size: 1.25rem;
             color: rgba(254, 254, 254, 0.85);
             font-weight: 400;
           }
 
           .conteudo {
-            margin: 0 25px 24px 25px;
+            margin: 0 1.6vw 3.4vh 1.6vw;
             display: flex;
             flex-direction: column;
             align-items: center;
 
             h3 {
               font-family: "Inter", sans-serif;
-              font-size: 24px;
+              font-size: 1.6rem;
               color: rgba(0, 16, 46, 0.85);
               font-weight: 500;
-              margin-bottom: 15px;
+              margin-bottom: 2.2vh;
               width: 100%;
               text-align: start;
             }
 
             p {
               font-family: "Inter", sans-serif;
-              font-size: 18px;
+              font-size: 1.125rem;
               color: rgba(0, 16, 46, 0.61);
               font-weight: 400;
-              margin-bottom: 46px;
+              margin-bottom: 6.6vh;
             }
 
             .ilustracao {
-              width: 220px;
-              height: 222px;
+              width: 14.5vw;
+              height: 14.6vw;
               align-items: center;
               display: flex;
               justify-content: center;
@@ -358,27 +370,27 @@ main {
             }
 
             .destaque {
-              width: 181px;
-              height: 36px;
+              width: 11.9vw;
+              height: 2.4vw;
               display: flex;
               flex-direction: row;
               flex-wrap: nowrap;
-              margin-top: 53px;
-              gap: 8px;
+              margin-top: 7.6vh;
+              gap: 0.53vw;
               justify-content: center;
               align-items: center;
               background-color: rgba(252, 246, 237, 0.75);
-              border: 1px solid rgba(252, 98, 17, 0.35);
-              border-radius: 50px;
+              border: 0.06rem solid rgba(252, 98, 17, 0.35);
+              border-radius: 3.1rem;
 
               .icon {
-                height: 20px;
+                height: 2.9vh;
                 width: auto;
               }
 
               label {
                 color: rgba(252, 98, 17, 0.8);
-                font-size: 15px;
+                font-size: 0.94rem;
                 font-family: "Poppins", sans-serif;
                 font-weight: 500;
               }
@@ -447,16 +459,16 @@ main {
         }
 
         .divisoria {
-          margin: 0px 46px;
-          height: 104px;
-          width: 0px;
-          border-left: 2px solid rgba(252, 98, 17, 0.32);
+          margin: 0 3vw;
+          height: 14.9vh;
+          width: 0;
+          border-left: 0.125rem solid rgba(252, 98, 17, 0.32);
           flex-shrink: 0;
         }
       }
 
       .card:nth-child(5) {
-        margin-right: 29px;
+        margin-right: 1.9vw;
       }
 
       .background {
@@ -473,12 +485,12 @@ main {
       }
 
       .bg2 {
-        height: 219px;
+        height: 31.4vh;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
 
       .bg1 {
-        height: 203px;
+        height: 29.1vh;
       }
     }
   }
@@ -486,8 +498,8 @@ main {
   #estatisticas {
     display: flex;
     flex-direction: column;
-    margin: 75px 100px 0px 100px;
-    padding-bottom: 15px;
+    margin: 10.8vh 14.4vh 0px 14.4vh;
+    padding-bottom: 2.2vh;
 
     h2 {
       position: absolute;
@@ -499,40 +511,40 @@ main {
     .cards {
       display: flex;
       flex-direction: row;
-      gap: 13px;
+      gap: 1rem;
 
       .card {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         flex: 2;
-        min-height: 250px;
+        min-height: 35.9vh;
         background-color: #fcf6ed;
-        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.04);
-        border-radius: 25px;
+        box-shadow: 0 0 0.3rem 0.2rem rgba(0, 0, 0, 0.04);
+        border-radius: 1.6rem;
       }
 
       .card:nth-of-type(-n + 3) {
         /* background-color: #FCF6ED; */
         align-self: flex-end;
-        padding: 30px 31px;
-        margin-top: 60px;
-        max-width: 280px;
-        min-width: 280px;
+        padding: 4.3vh 2vw;
+        margin-top: 8.6vh;
+        max-width: 18.2vw;
+        min-width: 18.2vw;
         flex: 3;
         justify-content: space-between;
 
         .indicador {
-          font-size: 40px;
+          font-size: 2.5rem;
           font-weight: 600;
           color: #fc6211;
-          line-height: 50px;
-          margin-bottom: 15px;
+          line-height: 7.2vh;
+          margin-bottom: 2.2vh;
         }
 
         p {
           font-family: "Inter", sans-serif;
-          font-size: 18px;
+          font-size: 1.125rem;
           color: #00102e9c;
         }
         a {
@@ -541,7 +553,7 @@ main {
         }
 
         .fonte {
-          font-size: 10px;
+          font-size: 0.625rem;
           font-weight: 300;
           color: #00102e9c;
         }
@@ -556,8 +568,8 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        padding: 43px 11px;
-        margin-left: 21px;
+        padding: 6.2vh 0.7vw;
+        margin-left: 1.3vw;
         flex: 5;
 
         .esquerda {
@@ -567,10 +579,10 @@ main {
 
           .destaque {
             transform: rotate(-30deg);
-            width: 26px;
+            width: 1.7vw;
             transform-origin: top left;
             position: absolute;
-            left: 140px;
+            left: 9.2vw;
           }
 
           .idosa {
