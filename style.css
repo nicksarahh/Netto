@@ -22,7 +22,7 @@ header {
   right: 0;
   width: auto;
   margin: 0;
-  padding: 0.8vw 6.6vw;
+  padding: 1.8vh 6.6vw;
   box-sizing: border-box;
   z-index: 9999;
 
@@ -98,7 +98,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 2.6vw;
-    margin-top: 16vh;
+    margin-top: 14.3vh;
     
 
     .esquerda,
@@ -301,7 +301,7 @@ main {
       .cards {
         display: flex;
         flex-direction: row;
-        gap: clamp(25px, 3vw, 50px);
+        gap: 3.3vw;
 
         .card {
           display: flex;
@@ -351,6 +351,7 @@ main {
               color: rgba(0, 16, 46, 0.61);
               font-weight: 400;
               margin-bottom: 6.6vh;
+              height: 9.3vh;
             }
 
             .ilustracao {
@@ -404,12 +405,12 @@ main {
       position: relative;
       display: flex;
       flex-direction: row;
-      padding: 0px 94px;
+      padding: 0 6.2vw;
       margin-top: auto;
       justify-content: center;
       align-items: center;
-      min-height: 219px;
-      gap: clamp(130px, 3vw, 260px);
+      min-height: 31.4vh;
+      gap: 16.2vw;
       width: 100%;
 
       .esquerda,
@@ -425,12 +426,12 @@ main {
         width: fit-content;
 
         .subtitulo {
-          font-size: 15px;
+          font-size: 0.9rem;
           font-weight: 500;
           color: rgba(252, 98, 17, 0.8);
         }
         .titulo {
-          font-size: 36px;
+          font-size: 2.25rem;
           font-weight: 600;
           color: rgba(0, 16, 46, 0.75);
           line-height: 50px;
@@ -445,14 +446,14 @@ main {
         .card {
           flex: 2;
           .indicador {
-            font-size: 40px;
+            font-size: 2.5rem;
             font-weight: 600;
             color: #fc6211;
           }
 
           p {
             font-family: "Inter", sans-serif;
-            font-size: 18px;
+            font-size: 1.1rem;
             font-weight: 400;
             color: rgba(0, 16, 46, 0.612);
           }
@@ -498,12 +499,12 @@ main {
   #estatisticas {
     display: flex;
     flex-direction: column;
-    margin: 10.8vh 14.4vh 0px 14.4vh;
-    padding-bottom: 2.2vh;
+    margin: 10.8vh 14.4vh 0 14.4vh;
+    padding-bottom: 10vh;
 
     h2 {
       position: absolute;
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 500;
       color: rgba(0, 16, 46, 0.9);
     }
@@ -596,19 +597,19 @@ main {
           display: flex;
           flex-direction: column;
           flex: 3;
-          gap: clamp(11px, 3vw, 23px);
-          margin-left: 9px;
+          gap: 3.3vh;
+          margin-left: 0.6vw;
           justify-content: center;
 
           .titulo {
             color: #fc6211de;
-            font-size: 18px;
+            font-size: 1.1rem;
             font-weight: 600;
           }
 
           .texto {
             font-family: "Inter", sans-serif;
-            font-size: 16px;
+            font-size: 1rem;
             color: #00102e9c;
           }
         }
@@ -619,8 +620,8 @@ main {
 
 footer {
   position: relative;
-  margin-top: 75px;
-  padding: 20px 40% 58px 100px;
+  margin-top: 0.1vh;
+  padding: 2.9vh 40% 8.3vh 6.6vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -647,16 +648,16 @@ footer {
     justify-content: center;
 
     label {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       color: #00102e99;
     }
   }
   .divisoria-footer {
-    margin: 0px 53px;
-    height: 96px;
-    width: 0px;
-    border-left: 2px solid rgba(252, 98, 17, 0.32);
+    margin: 0 3.5vw;
+    height: 13.8vh;
+    width: 0;
+    border-left: 0.125rem solid rgba(252, 98, 17, 0.32);
     flex-shrink: 0;
     display: flex;
   }
@@ -666,25 +667,25 @@ footer {
     flex-direction: column;
     flex: 2;
     justify-content: center;
-    gap: 16px;
+    gap: 2.3vh;
 
     .titulo {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 600;
       color: #00102ebf;
-      padding-right: 122px;
-      line-height: 32px;
+      padding-right: 8vw;
+      line-height: 4.6vh;
     }
     .texto {
       font-family: "Inter", sans-serif;
-      font-size: 18px;
+      font-size: 1.1rem;
       font-weight: 400;
       color: #00102e9c;
     }
   }
 }
 
-/* Cards Grid responsiveness */
+/* Cards Grid responsiveness
 @media (max-width: 768px) {
   .cards-grid {
     flex-direction: column;
@@ -698,7 +699,7 @@ footer {
   }
 }
 
-/* Base responsive styles */
+/* Base responsive styles 
 @media (max-width: 640px) {
   body {
     padding: 10px;
@@ -717,7 +718,7 @@ footer {
   }
 }
 
-/* Cards Grid responsiveness */
+/* Cards Grid responsiveness 
 @media (max-width: 768px) {
   .cards-grid {
     flex-direction: column;
@@ -729,4 +730,4 @@ footer {
     width: 100% !important;
     max-width: 100% !important;
   }
-}
+} */
